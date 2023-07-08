@@ -2,6 +2,8 @@ const dotenv =require('dotenv')
 dotenv.config({path:'./config.env'});
 const express=require('express');
 const app=express();
+const cors = require("cors");
+
 const cookieparser=require('cookie-parser');
 const port=process.env.PORT;
 

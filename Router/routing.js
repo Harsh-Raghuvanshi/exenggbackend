@@ -1,6 +1,5 @@
 const express = require("express");
 const paths = require("path");
-const cors = require("cors");
 const multer = require("multer");
 const router = new express.Router();
 const bcrypt = require("bcryptjs");
