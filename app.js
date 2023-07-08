@@ -9,7 +9,7 @@ const port = process.env.PORT;
 
 const corsOptions = {
   origin:
-    "https://64a962b14bbc527c3a702b4b--loquacious-mandazi-a43358.netlify.app",
+    "https://64a96942e7faff0008fda5ce--loquacious-mandazi-a43358.netlify.app/",
   methods: "GET, POST, PUT, DELETE",
   allowedHeaders: "Content-Type, Authorization",
   credentials: true, // Add this line
