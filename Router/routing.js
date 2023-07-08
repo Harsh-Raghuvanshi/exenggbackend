@@ -15,14 +15,10 @@ router.use(express.static(publicpath));
 
 
 // Enable CORS for all routes
-app.use(cors());
+
 
 // Optional: Configure specific CORS options
-app.use(cors({
-  origin: "https://64a95c317ed34f7dc42eae4d--loquacious-mandazi-a43358.netlify.app",
-  methods: "GET, POST, PUT, DELETE",
-  allowedHeaders: "Content-Type, Authorization",
-}));
+
 
 // ***************************************************MULTER WORK******************************************
 const storage = multer.diskStorage({
