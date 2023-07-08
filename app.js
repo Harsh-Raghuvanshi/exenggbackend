@@ -10,11 +10,11 @@ const port=process.env.PORT;
 app.use(cors());
 app.use(express.json());
 app.use(cookieparser());
-app.use(cors({
-    origin: "https://64a95c317ed34f7dc42eae4d--loquacious-mandazi-a43358.netlify.app",
-    methods: "GET, POST, PUT, DELETE",
-    allowedHeaders: "Content-Type, Authorization",
-}));
+// app.use(cors({
+//     origin: "https://64a95c317ed34f7dc42eae4d--loquacious-mandazi-a43358.netlify.app",
+//     methods: "GET, POST, PUT, DELETE",
+//     allowedHeaders: "Content-Type, Authorization",
+// }));
 
 require('./conn');
 const router=require('./Router/routing');
