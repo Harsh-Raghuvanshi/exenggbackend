@@ -113,6 +113,8 @@ router.post("/signinb", async (req, res) => {
       res.cookie("jwtoken", token, {
         expires: new Date(Date.now() + 2300000000),
         httpOnly: true,
+        secure: true, // Set secure option to true
+
       });
 
       return res.status(200).json({ message: "Sucessfull Login" });
