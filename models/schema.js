@@ -56,9 +56,12 @@ testschema.pre("save", async function (next) {
 
 testschema.methods.generateAuthToken = async function () {
   try {
+    console.log("I am here in generate auth token function for generating token")
     let token = jwt.sign({ _id: this._id }, process.env.SECRET_KEY);
     this.tokens = this.tokens.concat({ token: token });
     await this.save();
+    console.log("the token which i generated is ");
+    console.log(token);
     return token;
   } catch (err) {
     // console.log(err);
